@@ -131,32 +131,32 @@ function! gen_tags#gtags#init() abort
 
   "Hotkey for cscope
   if empty(g:gen_tags#gtags_split)
-    nmap <C-\>c :cs find c <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>d :cs find d <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>e :cs find e <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>f :cs find f <C-R>=expand('<cfile>')<CR><CR>
-    nmap <C-\>g :cs find g <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>i :cs find i <C-R>=expand('<cfile>')<CR><CR>
-    nmap <C-\>s :cs find s <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>t :cs find t <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>c :cs find c <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>d :cs find d <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>e :cs find e <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>f :cs find f <C-R>=expand('<cfile>')<CR><CR>
+    nnoremap <C-\>g :cs find g <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>i :cs find i <C-R>=expand('<cfile>')<CR><CR>
+    nnoremap <C-\>s :cs find s <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>t :cs find t <C-R>=expand('<cword>')<CR><CR>
   elseif g:gen_tags#gtags_split ==# 'h'
-    nmap <C-\>c :scs find c <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>d :scs find d <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>e :scs find e <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>f :scs find f <C-R>=expand('<cfile>')<CR><CR>
-    nmap <C-\>g :scs find g <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>i :scs find i <C-R>=expand('<cfile>')<CR><CR>
-    nmap <C-\>s :scs find s <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>t :scs find t <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>c :scs find c <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>d :scs find d <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>e :scs find e <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>f :scs find f <C-R>=expand('<cfile>')<CR><CR>
+    nnoremap <C-\>g :scs find g <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>i :scs find i <C-R>=expand('<cfile>')<CR><CR>
+    nnoremap <C-\>s :scs find s <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>t :scs find t <C-R>=expand('<cword>')<CR><CR>
   elseif g:gen_tags#gtags_split ==# 'v'
-    nmap <C-\>c :vert scs find c <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>d :vert scs find d <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>e :vert scs find e <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>f :vert scs find f <C-R>=expand('<cfile>')<CR><CR>
-    nmap <C-\>g :vert scs find g <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>i :vert scs find i <C-R>=expand('<cfile>')<CR><CR>
-    nmap <C-\>s :vert scs find s <C-R>=expand('<cword>')<CR><CR>
-    nmap <C-\>t :vert scs find t <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>c :vert scs find c <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>d :vert scs find d <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>e :vert scs find e <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>f :vert scs find f <C-R>=expand('<cfile>')<CR><CR>
+    nnoremap <C-\>g :vert scs find g <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>i :vert scs find i <C-R>=expand('<cfile>')<CR><CR>
+    nnoremap <C-\>s :vert scs find s <C-R>=expand('<cword>')<CR><CR>
+    nnoremap <C-\>t :vert scs find t <C-R>=expand('<cword>')<CR><CR>
   endif
 
   "Command list
